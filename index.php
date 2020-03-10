@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="normalize.css">
 		<link rel="stylesheet" href="cats.css">
 
-		<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
 		<script src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 		<link href="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css" type="text/css" rel="stylesheet" />
@@ -114,7 +114,7 @@ mysqli_close($link);
 
 </div>
 
-  <script src="http://coliro.com/isotope/isotope-docs/js/isotope-docs.min.js?6"></script>
+  <script src="https://coliro.com/isotope/isotope-docs/js/isotope-docs.min.js?6"></script>
 
 	</body>
 </html>
