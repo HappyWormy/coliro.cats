@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=cyrillic-ext');
+
+
+* {
+font-family: 'Montserrat', sans-serif;
+}
+
+#kittens {
+display: flex;
+flex-flow: column wrap;
+align-content: space-between;
+flex-direction: row;
+justify-content: center;
+counter-reset: items;
+}
+
+.kitten .kitten_name::before {
+counter-increment: items;
+content: counter(items);
+display: block;
+position: absolute;
+line-height: 0.5;
+top: -1.8em;
+padding: 10px;
+background-color: rgba(255, 255, 255, 0.4);
+}
+
+.kitten {
+padding: 1%;
+}
+
+.kitten img {
+max-width: 270px;
+}
+
+.kitten .kitten_name {
+font-size: 2em;
+font-weight: 700;
+position: relative;
+}
+
+.kitten .kitten_birth:before,
+.kitten .kitten_age:before,
+.kitten .kitten_age:after,
+.kitten .kitten_weight:before,
+.kitten .kitten_weight:after,
+.kitten .kitten_id:before {
+color: #aaa;
+}
+
+.kitten .kitten_birth:before {
+content: "Дата рождения: ";
+}
+
+.kitten .kitten_age:before {
+content: "Возраст: ";
+}
+.kitten .kitten_age:after {
+content: " лет";
+}
+.kitten .kitten_weight:before {
+content: "Вес: ";
+}
+.kitten .kitten_weight:after {
+content: " кг.";
+}
+
+.kitten .kitten_id:before {
+content: "id: ";
+}
+
+.php_learn {
+padding: 1%;
+}
+
+
+
+.button-group {
+padding: 1%;
+}
+
+
+
+.add_button,
+.button-group button {
+background-color: #98cb00;
+border-radius: 5px;
+border: 1px solid rgba(0, 0, 0, 0.1);
+display: inline-block;
+cursor: pointer;
+color: #ffffff;
+font-size: 18px;
+padding: 10px 20px;
+text-decoration: none;
+text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+}
+.add_button:hover,
+.button-group button:hover {
+background-color: #8dbc00;
+}
+.add_button:active,
+.button-group button:active {
+position:relative;
+top:1px;
+}
+
+.button-group button.is-checked {
+	background-color: #8dbc00;
+}
+button:focus {outline:0;}
+
+
+.add_button {
+	margin: 20px;
+}
+
+
+.cat_edit_succes {
+text-align: center;
+}
+
+
+/* Форма */
+
+.form_item {
+	margin: 20px;
+}
+
+.form_item input[type="text"],
+.form_item input[type="date"],
+.form_item input[type="number"],
+.form_item input[type="file"]
+{
+border: 1px solid #cccccc;
+border-radius: 3px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+-khtml-border-radius: 3px;
+background: #ffffff !important;
+outline: none;
+padding: 15px;
+width: 100%;
+color: #484848;
+}
+.form_item input[type="text"]:focus,
+.form_item input[type="date"]:focus,
+.form_item input[type="number"]:focus,
+.form_item input[type="file"]:focus {
+  color: #98cb00;
+  border: 1px solid #98cb00;
+}
+
+.form_item input[type="submit"] {
+outline: none;
+padding: 15px;
+width: 100%;
+color: #484848;
+}
+
+
+@media only screen and (max-width: 768px) {
+	
+#kittens {
+flex-direction: column;
+}
+
+.kitten img {
+max-width: 100%;
+}
+
+}
+
